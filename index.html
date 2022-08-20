@@ -155,36 +155,39 @@
             </nav><!-- /.navbar -->
           </div>
 
-          <!-- youtube api v3 start -->
+          <!-- youtube api v3 start search -->  
 
-          <div class="col-sm-5">
-            
+          <div class="col-md-5">
             <div class="input-group">
-              <input id="query" type="text" class="form-control" placeholder="Search for a video">
-              <span class="input-group-btn">
-              <button id="search-button" onclick="keyWordsearch()" class="btn btn-secondary searchBtn" type="button" >Go!</button>
-            </span>
+                <input id="query" type="text" class="form-control" placeholder="Search for a video">
+                <span class="input-group-btn">
+                <button id="search-button" onclick="keyWordsearch()" class="btn btn-secondary searchBtn" type="button" >Go!</button>
+              </span>
+            </div>
           </div>
-          <!--  
-          <form class="search-form" method="get" action="#">
+
+          <!-- youtube api v3 end search --> 
+
+          
+          <!-- <div class="col-sm-5">
+            <form class="search-form" method="get" action="#">
               <input name="s" type="text" class="search-input" size="20" maxlength="20" placeholder="Search Here ...." required="">
               <input type="submit" name="submit" class="search-submit">
-            </form>--> <!-- /.search-form -->
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-                <div id="results"></div>
-            </div>
-        </div>
-
-        <!-- youtube api v3 end -->
+            </form>
+          </div> --> <!-- /.search-form -->
 
         </div>
       </div><!-- /.container -->
     </div><!-- /.header-bottom -->
   </header><!-- /.header -->
 
+
+  <!-- youtube api search result -->
+    <div class="row">
+      <div class="col-md-12">
+        <div id="results"></div>
+      </div>
+    </div>
 
 
   <section class="banner-section banner-slider text-center" style="background-color:#FFBB73;">
@@ -1298,14 +1301,9 @@
 
 <!-- youtube api v3 script -->
 
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="script/script.js"></script>
 <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady">  </script>
 <script src="script/login-script.js"></script>
-
-
 
 </body>
 </html>
