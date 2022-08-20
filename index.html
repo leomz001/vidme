@@ -155,12 +155,30 @@
             </nav><!-- /.navbar -->
           </div>
 
+          <!-- youtube api v3 start -->
+
           <div class="col-sm-5">
-            <form class="search-form" method="get" action="#">
+            
+            <div class="input-group">
+              <input id="query" type="text" class="form-control" placeholder="Search for a video">
+              <span class="input-group-btn">
+              <button id="search-button" onclick="keyWordsearch()" class="btn btn-secondary searchBtn" type="button" >Go!</button>
+            </span>
+          </div>
+          <!--  
+          <form class="search-form" method="get" action="#">
               <input name="s" type="text" class="search-input" size="20" maxlength="20" placeholder="Search Here ...." required="">
               <input type="submit" name="submit" class="search-submit">
-            </form><!-- /.search-form -->
+            </form>--> <!-- /.search-form -->
           </div>
+
+          <div class="row">
+            <div class="col-md-12">
+                <div id="results"></div>
+            </div>
+        </div>
+
+        <!-- youtube api v3 end -->
 
         </div>
       </div><!-- /.container -->
@@ -1278,6 +1296,14 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="31ungZiH"></script>
 
+<!-- youtube api v3 script -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="script/script.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady">  </script>
+<script src="script/login-script.js"></script>
 
 
 
