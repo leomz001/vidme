@@ -47,6 +47,35 @@
   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 
 
+  <!--google search-->
+<script>$(".gsc-search-button").click(function() {
+  $('.gsc-input').toggle(),
+    $(".gsc-input").css({
+      "width": "180px"
+    }),
+    $("td.gsc-search-button").css({
+      "float": "left"
+    });
+
+  console.log("Searching");
+  return false;
+});</script>
+
+
+
+  <script>
+    (function() {
+      var cx = '017907526302470893983:d8gj5c0ljcg';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+          '//cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+
 </head>
 
 
@@ -155,7 +184,16 @@
             </nav><!-- /.navbar -->
           </div>
 
-          <!-- youtube api v3 start search -->  
+          <!-- google search start search -->  
+
+
+          <div class="col-md-5">
+            <div class="input-group">
+              <gcse:search></gcse:search>
+            </div>
+          </div>
+
+          <!-- youtube api v3 start search -->
 
           <div class="col-md-5">
             <div class="input-group">
