@@ -54,7 +54,7 @@ function makeRequest(page) {
                 vidDescription = item.snippet.description;
                 console.log(response);
 
-                $('#results').append('<div class="videos"><h2 class="title">'+vidTitle + '</h2> <h3 class="descript" style="height: 60%; width:60%; margin: auto;">'+'Description:  <br/>'+vidDescription +'</h3> <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/'+vidId +'"</iframe></div></div></div>');
+                $('#results').append('<div class="videos"><h2 class="title">'+vidTitle + '</h2> <h3 class="descript">'+'Description:  <br/>'+vidDescription +'</h3> <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/'+vidId +'"</iframe></div></div></div>');
                 $(".nextpr").css('display', 'inline');
                 setTimeout(function(){ $(".loader").fadeOut("slow"); }, 1000);
 
