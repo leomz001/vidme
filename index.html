@@ -85,25 +85,27 @@
 
 
   <header class="header">
-    <div class="header-top">
+    <div class="header-top" style="background-color:#f3ebe4;">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
             <div class="top-sitemap text-left">
-              <span>Welcome to my Vlog!</span>
+              <span style="color: rgb(129, 46, 230);"><marquee direction = "right">WELCOME TO MY VLOG!</marquee></span>
+              <!--
               <span> <a href="signin.html"><i class="fa fa-lock"></i> Sign In</a></span>
               <span><a href="register.html"><i class="fa fa-user"></i> Register</a></span>
+               --> 
             </div><!-- /.top-sitemap -->
           </div>
 
           <div class="col-sm-6">
             <div class="top-sitemap text-right">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-pinterest"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-vimeo-square"></i></a>
-              <a href="#"><i class="fa fa-google-plus-square"></i></a>
-              <a href="#"><i class="fa fa-youtube"></i></a>
+              <a href="https://www.facebook.com/leomz.aguilar"><i class="fa fa-facebook"></i></a>
+              
+              <a href="https://twitter.com/Leomz_5"><i class="fa fa-twitter"></i></a>
+              
+              <a href="https://www.youtube.com/channel/UCiUYYthH9WEVsivkpDAlnXw"><i class="fa fa-youtube"></i></a>
+              
             </div><!-- /.top-sitemap -->
           </div>
         </div><!-- /.row -->
@@ -201,7 +203,7 @@
             <div class="input-group">
                 <input id="query" type="text" class="form-control" placeholder="Search video here">
                 <span class="input-group-btn">
-                <button id="search-button" onclick="keyWordsearch()" class="btn btn-secondary searchBtn" type="button">SEARCH</button>
+                <button id="search-button" onclick="keyWordsearch()" class="btn btn-secondary searchBtn" type="button" onclick="doSomething();">SEARCH</button>
               </span>
             </div>
           </div>
