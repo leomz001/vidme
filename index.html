@@ -76,15 +76,17 @@
     })();
   </script>
 
-<!--enter code jquery-->
-<script>
+<!--enter code jquery for auto enter search-->
+<script>             
+  window.onload = function() {
+    document.getElementById('query').onkeypress = function searchKeyPress(event) {
+       if (event.keyCode == 13) {
+           document.getElementById('search-button').click();
+       }
+   };
 
-$("#query").keyup(function(event) {
-    if (event.keyCode === 13) {
-        $("#search-button").click();
-    }
-});
-
+   document.getElementById('search-button').onclick =doSomething;
+}
 </script>
 
 
@@ -213,7 +215,7 @@ $("#query").keyup(function(event) {
 
           <div class="col-md-5">
             <div class="input-group">
-                <input id="query" type="text" class="form-control" placeholder="Search video here">
+                <input id="query" type="text" class="form-control" placeholder="Search video here"/>
                 <span class="input-group-btn">
                 <button id="search-button" onclick="keyWordsearch()" class="btn btn-secondary searchBtn" type="button";>SEARCH</button>
               </span>
